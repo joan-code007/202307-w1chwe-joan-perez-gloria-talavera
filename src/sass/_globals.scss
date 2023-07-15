@@ -4,10 +4,23 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: $font-text;
+}
 body {
   margin: 0;
+  font-size: 2rem;
 }
 
 ul {
   list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-titles;
 }
