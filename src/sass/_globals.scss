@@ -1,13 +1,42 @@
+@use "fonts";
+
 *,
 ::before,
 ::after {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
+html {
+  font-family: fonts.$font-text;
 }
 
-ul {
+body {
+  margin: 0;
+  font-size: 1rem;
+}
+
+ul,
+li {
   list-style: none;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: fonts.$font-titles;
+}
+
+input,
+button {
+  font: inherit;
+  border: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
 }
