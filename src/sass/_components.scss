@@ -1,3 +1,63 @@
+@use "colors";
+
 .destinations-header {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 6.25rem;
+}
+
+.destinations-header__title {
+  font-size: 2rem;
+  margin: 30px 0;
+  border-bottom: 3px solid colors.$primary-color;
+}
+
+.destinations-header__subtitle {
+  align-self: stretch;
+  font-size: 1.12rem;
+}
+
+.destination-list__card {
+  position: relative;
+  width: 18rem;
+  height: 20rem;
+  color: #fff;
+}
+
+.destination-list__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.destination-list__info {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  padding: 2.5rem 1.25rem;
+  bottom: 0px;
+}
+
+.destination-list__info__title {
+  font-weight: 500;
+}
+
+.destination-list > li:not(:first-child) {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .destination-list > li:not(:first-child) {
+    display: flex;
+  }
+
+  .destination-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
 }
