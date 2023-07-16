@@ -1,3 +1,70 @@
 .main-container {
   padding: 20px;
 }
+
+.section__start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-image: url("../../public/images/foto-section1.jpeg");
+  flex-direction: column;
+}
+
+.div__section {
+  display: flex;
+  width: 100%;
+}
+
+.header__container {
+  display: flex;
+  justify-content: flex-start;
+  background-image: url(/public/images/Logo-1.svg);
+  height: 10vh;
+  width: 100%;
+  background-color: aqua;
+}
+
+.section__titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__button-login {
+  display: none;
+}
+
+body {
+  min-width: 100%;
+}
+
+.header_button-signUp {
+  display: none;
+}
+
+.form__ul {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-arrows-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 1.875rem;
+  padding: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .slide-arrows-container {
+    display: flex;
+    padding: 0;
+    align-self: flex-end;
+  }
+}
