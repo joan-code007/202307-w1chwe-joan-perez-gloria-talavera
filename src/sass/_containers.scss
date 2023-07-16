@@ -42,3 +42,16 @@ body {
 .header_button-signUp {
   display: none;
 }
+
+.section__form {
+}
+
+.form__ul {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+}
