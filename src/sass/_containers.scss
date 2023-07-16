@@ -2,12 +2,16 @@
   padding: 20px;
 }
 
+.destinations-container {
+  margin-bottom: 3.75rem;
+}
+
 .slide-arrows-container {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  gap: 40px;
-  padding: 50px;
+  gap: 1.875rem;
+  padding: 3rem;
 }
 
 @media screen and (min-width: 768px) {
