@@ -30,6 +30,7 @@
   height: 100%;
   object-fit: cover;
   border-radius: 1rem;
+  filter: brightness(0.8);
 }
 
 .destination-list__info {
@@ -47,6 +48,23 @@
 
 .destination-list > li:not(:first-child) {
   display: none;
+}
+
+.button__left-arrow,
+.button__right-arrow {
+  background-color: colors.$secondary-color;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.button__left-arrow:active,
+.button__right-arrow:active {
+  background-color: colors.$primary-color;
+}
+
+.button__left-arrow:hover,
+.button__right-arrow:hover {
+  background-color: colors.$primary-color-light;
 }
 
 @media screen and (min-width: 768px) {
