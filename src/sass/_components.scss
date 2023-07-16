@@ -1,3 +1,78 @@
+@use "colors";
+
 .destinations-header {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  margin-bottom: 6.25rem;
 }
+
+.destinations-header__title {
+  align-self: stretch;
+  font-size: 2rem;
+  margin: 30px 0;
+  border-bottom: 3px solid colors.$primary-color;
+}
+
+.destinations-header__subtitle {
+  align-self: stretch;
+  font-size: 1.12rem;
+}
+
+.destination-list {
+  margin-bottom: 6.25rem;
+}
+
+.destination-list__card {
+  position: relative;
+  width: 18rem;
+  height: 20rem;
+  color: #fff;
+}
+
+.destination-list__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.destination-list__info {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  color: #fff;
+}
+
+.destination-list__info__title {
+  font-weight: 500;
+  margin: 0;
+}
+
+.destination-list__info__location {
+  // cambiado de sitio. Revisar
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.destination-list__info__location img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.destination-list__info__location span {
+  font-size: 1.1rem;
+}
+
+/*.destination-list > li:not(first-child) {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .destination-list > li:not(first-child) {
+    display: flex;
+  }
+}*/
